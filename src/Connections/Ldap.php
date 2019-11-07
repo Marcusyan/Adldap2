@@ -323,7 +323,13 @@ class Ldap implements ConnectionInterface
      */
     public function add($dn, array $entry)
     {
-        return ldap_add($this->getConnection(), $dn, $entry);
+    //  \Log::debug();
+      \Log::debug($dn);
+      \Log::debug($entry);
+        return ldap_add(
+          $this->getConnection(),
+           $dn,
+            $entry);
     }
 
     /**
@@ -355,6 +361,7 @@ class Ldap implements ConnectionInterface
      */
     public function modifyBatch($dn, array $values)
     {
+      \Log::debug(json_encode([$dn,$values]));
         return ldap_modify_batch($this->getConnection(), $dn, $values);
     }
 
