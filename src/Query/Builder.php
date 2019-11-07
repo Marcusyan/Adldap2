@@ -21,7 +21,7 @@ class Builder
      *
      * @var array
      */
-    public $columns = ['*'];
+    public $columns = ['*','memberof'];
 
     /**
      * The query filters.
