@@ -107,4 +107,29 @@ class OpenLDAP extends Schema
     {
         return false;
     }
+    public function objectCategoryPerson()
+    {
+        return 'posixAccount';
+    }
+    public function objectCategoryGroup()
+    {
+        return 'groupofnames';
+    }
+    public function person()
+    {
+        return 'posixAccount';
+    }
+    public function memberOf()
+    {
+        return 'memberOf';
+    }
+    public function userObjectClasses() : array
+    {
+      return [
+        $this->top(),
+        $this->person(),
+        //      $this->organizationalPerson(),
+        $this->objectClassUser(),
+      ];
+    }
 }
