@@ -611,7 +611,7 @@ abstract class Schema implements SchemaInterface
      */
     public function objectCategoryPerson()
     {
-        return 'person';
+        return 'posixAccount';
     }
 
     /**
@@ -796,7 +796,7 @@ abstract class Schema implements SchemaInterface
      */
     public function person()
     {
-        return 'person';
+        return 'posixAccount';
     }
 
     /**
@@ -1199,7 +1199,7 @@ abstract class Schema implements SchemaInterface
         return [
             $this->top(),
             $this->person(),
-            $this->organizationalPerson(),
+      //      $this->organizationalPerson(),
             $this->objectClassUser(),
         ];
     }
