@@ -1,5 +1,5 @@
 {
-    "name": "adldap2/adldap2",
+    "name": "marcusyan/adldap2",
     "type": "library",
     "description": "A PHP LDAP Package for humans.",
     "keywords": [
@@ -10,20 +10,6 @@
         "windows",
         "adldap",
         "adldap2"
-    ],
-    "license": "MIT",
-    "support": {
-        "docs": "https://github.com/Adldap2/Adldap2/blob/master/readme.md",
-        "issues": "https://github.com/Adldap2/Adldap2/issues",
-        "source": "https://github.com/Adldap2/Adldap2",
-        "email": "steven_bauman@outlook.com"
-    },
-    "authors": [
-        {
-            "name": "Steve Bauman",
-            "email": "steven_bauman@outlook.com",
-            "role": "Developer"
-        }
     ],
     "require": {
         "php": ">=7.0",
